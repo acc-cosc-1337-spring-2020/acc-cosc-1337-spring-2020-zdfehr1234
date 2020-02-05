@@ -7,7 +7,7 @@ using std::cin; // Used to capture keyboard
 int main() 
 {
 	//create a bool variable named even
-	bool even;
+	bool even = false;
 	//create an int variable named value
 	int value;
 	//prompt user for a keyboard number
