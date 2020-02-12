@@ -1,4 +1,4 @@
-#include "sample_while.h"
+//#include "sample_while.h"
 
 int main() 
 {
