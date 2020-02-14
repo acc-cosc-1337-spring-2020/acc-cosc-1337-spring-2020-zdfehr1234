@@ -1,6 +1,7 @@
 //#include "sample_for_ranged.h"
 #include<iostream>
 #include<vector>
+#include "for_ranged.h"
 
 using std::vector;
 
@@ -15,6 +16,14 @@ e
 s
 t
 */
+void loop_string_w_index(const std::string & str)
+{
+	for (int i = 0; i < str.length(); ++i)
+	{
+		std::cout << str[i] << "\n";
+	}
+}
+
 
 
 /*
@@ -28,6 +37,15 @@ e
 s
 t
 */
+
+void loop_string_w_auto(const std::string &str)
+{
+	for (auto ch : str)
+	{
+		std::cout << ch << "\n";
+
+	}
+}
 
 
 void loop_vector_w_index() 
