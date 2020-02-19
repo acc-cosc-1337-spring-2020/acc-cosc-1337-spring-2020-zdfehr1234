@@ -11,7 +11,7 @@ int main()
 	std::string str = "joe";
 
 	loop_string_w_index(str);
-	loop_string_w_auto(str);
+	loop_string_w_auto_value(str);
 
 	return 0;
 }
