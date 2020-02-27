@@ -193,6 +193,12 @@
 			"path" : "src/examples/03_module/07_vectors_for_ranged/CMakeLists.txt"
 		},
 		{
+			"path" : "src/examples/04_module/CMakeLists.txt"
+		},
+		{
+			"path" : "src/examples/04_module/01_bank/CMakeLists.txt"
+		},
+		{
 			"path" : "src/homework/CMakeLists.txt"
 		},
 		{
@@ -203,6 +209,9 @@
 		},
 		{
 			"path" : "src/homework/03_iteration/CMakeLists.txt"
+		},
+		{
+			"path" : "src/homework/04_vectors/CMakeLists.txt"
 		},
 		{
 			"path" : "test/CMakeLists.txt"
@@ -232,6 +241,9 @@
 			"path" : "test/examples_test/03_module_test/CMakeLists.txt"
 		},
 		{
+			"path" : "test/examples_test/04_module_test/CMakeLists.txt"
+		},
+		{
 			"path" : "test/homework_test/CMakeLists.txt"
 		},
 		{
@@ -242,6 +254,9 @@
 		},
 		{
 			"path" : "test/homework_test/03_iteration_test/CMakeLists.txt"
+		},
+		{
+			"path" : "test/homework_test/04_vectors_test/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

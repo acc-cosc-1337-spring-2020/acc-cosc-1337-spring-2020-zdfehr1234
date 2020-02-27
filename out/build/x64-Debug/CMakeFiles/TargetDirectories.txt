@@ -109,6 +109,14 @@ C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-D
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/examples/03_module/07_vectors_for_ranged/CMakeFiles/rebuild_cache.dir
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/examples/03_module/07_vectors_for_ranged/CMakeFiles/test.dir
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/examples/03_module/07_vectors_for_ranged/CMakeFiles/edit_cache.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/examples/04_module/CMakeFiles/rebuild_cache.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/examples/04_module/CMakeFiles/test.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/examples/04_module/CMakeFiles/edit_cache.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/examples/04_module/01_bank/CMakeFiles/ex_04_01_library.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/examples/04_module/01_bank/CMakeFiles/ex_04_01_exe.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/examples/04_module/01_bank/CMakeFiles/rebuild_cache.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/examples/04_module/01_bank/CMakeFiles/test.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/examples/04_module/01_bank/CMakeFiles/edit_cache.dir
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/homework/CMakeFiles/rebuild_cache.dir
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/homework/CMakeFiles/test.dir
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/homework/CMakeFiles/edit_cache.dir
@@ -127,6 +135,11 @@ C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-D
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/homework/03_iteration/CMakeFiles/rebuild_cache.dir
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/homework/03_iteration/CMakeFiles/test.dir
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/homework/03_iteration/CMakeFiles/edit_cache.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/homework/04_vectors/CMakeFiles/rebuild_cache.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/homework/04_vectors/CMakeFiles/test.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/homework/04_vectors/CMakeFiles/hw_04_library.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/homework/04_vectors/CMakeFiles/hw_04_exe.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/homework/04_vectors/CMakeFiles/edit_cache.dir
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/CMakeFiles/rebuild_cache.dir
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/CMakeFiles/test.dir
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/CMakeFiles/edit_cache.dir
@@ -160,6 +173,10 @@ C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-D
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/examples_test/03_module_test/CMakeFiles/rebuild_cache.dir
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/examples_test/03_module_test/CMakeFiles/test.dir
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/examples_test/03_module_test/CMakeFiles/edit_cache.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/examples_test/04_module_test/CMakeFiles/ex_04_tests.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/examples_test/04_module_test/CMakeFiles/rebuild_cache.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/examples_test/04_module_test/CMakeFiles/test.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/examples_test/04_module_test/CMakeFiles/edit_cache.dir
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/homework_test/CMakeFiles/rebuild_cache.dir
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/homework_test/CMakeFiles/test.dir
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/homework_test/CMakeFiles/edit_cache.dir
@@ -175,3 +192,7 @@ C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-D
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/homework_test/03_iteration_test/CMakeFiles/rebuild_cache.dir
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/homework_test/03_iteration_test/CMakeFiles/test.dir
 C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/homework_test/03_iteration_test/CMakeFiles/edit_cache.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/homework_test/04_vectors_test/CMakeFiles/hw_04_tests.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/homework_test/04_vectors_test/CMakeFiles/rebuild_cache.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/homework_test/04_vectors_test/CMakeFiles/test.dir
+C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/homework_test/04_vectors_test/CMakeFiles/edit_cache.dir

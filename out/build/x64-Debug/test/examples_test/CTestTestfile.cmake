@@ -7,3 +7,4 @@
 subdirs("01_module_test")
 subdirs("02_module_test")
 subdirs("03_module_test")
+subdirs("04_module_test")

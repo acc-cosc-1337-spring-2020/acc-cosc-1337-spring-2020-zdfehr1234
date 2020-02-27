@@ -9,7 +9,7 @@
 					"childIndexes" : 
 					[
 						1,
-						29
+						32
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -24,7 +24,7 @@
 					[
 						2,
 						6,
-						25
+						27
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -101,7 +101,8 @@
 					[
 						7,
 						13,
-						17
+						17,
+						25
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -391,12 +392,42 @@
 					]
 				},
 				{
+					"build" : "src/examples/04_module",
+					"childIndexes" : 
+					[
+						26
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 0,
+					"source" : "src/examples/04_module"
+				},
+				{
+					"build" : "src/examples/04_module/01_bank",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 25,
+					"projectIndex" : 0,
+					"source" : "src/examples/04_module/01_bank",
+					"targetIndexes" : 
+					[
+						42,
+						43
+					]
+				},
+				{
 					"build" : "src/homework",
 					"childIndexes" : 
 					[
-						26,
-						27,
-						28
+						28,
+						29,
+						30,
+						31
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -412,13 +443,13 @@
 					{
 						"string" : "3.8"
 					},
-					"parentIndex" : 25,
+					"parentIndex" : 27,
 					"projectIndex" : 3,
 					"source" : "src/homework/01_expressions",
 					"targetIndexes" : 
 					[
-						42,
-						43
+						45,
+						46
 					]
 				},
 				{
@@ -427,13 +458,13 @@
 					{
 						"string" : "3.8"
 					},
-					"parentIndex" : 25,
+					"parentIndex" : 27,
 					"projectIndex" : 0,
 					"source" : "src/homework/02_decisions",
 					"targetIndexes" : 
 					[
-						45,
-						46
+						48,
+						49
 					]
 				},
 				{
@@ -442,22 +473,37 @@
 					{
 						"string" : "3.8"
 					},
-					"parentIndex" : 25,
+					"parentIndex" : 27,
 					"projectIndex" : 0,
 					"source" : "src/homework/03_iteration",
 					"targetIndexes" : 
 					[
-						48,
-						49
+						51,
+						52
+					]
+				},
+				{
+					"build" : "src/homework/04_vectors",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 27,
+					"projectIndex" : 0,
+					"source" : "src/homework/04_vectors",
+					"targetIndexes" : 
+					[
+						54,
+						55
 					]
 				},
 				{
 					"build" : "test",
 					"childIndexes" : 
 					[
-						30,
-						34,
-						38
+						33,
+						37,
+						42
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -471,15 +517,15 @@
 					"build" : "test/classwork_test",
 					"childIndexes" : 
 					[
-						31,
-						32,
-						33
+						34,
+						35,
+						36
 					],
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.8"
 					},
-					"parentIndex" : 29,
+					"parentIndex" : 32,
 					"projectIndex" : 0,
 					"source" : "test/classwork_test"
 				},
@@ -489,7 +535,7 @@
 					{
 						"string" : "3.8"
 					},
-					"parentIndex" : 30,
+					"parentIndex" : 33,
 					"projectIndex" : 0,
 					"source" : "test/classwork_test/01_assign_test",
 					"targetIndexes" : 
@@ -503,7 +549,7 @@
 					{
 						"string" : "3.8"
 					},
-					"parentIndex" : 30,
+					"parentIndex" : 33,
 					"projectIndex" : 0,
 					"source" : "test/classwork_test/02_assign_test",
 					"targetIndexes" : 
@@ -517,7 +563,7 @@
 					{
 						"string" : "3.8"
 					},
-					"parentIndex" : 30,
+					"parentIndex" : 33,
 					"projectIndex" : 0,
 					"source" : "test/classwork_test/03_assign_test",
 					"targetIndexes" : 
@@ -529,15 +575,16 @@
 					"build" : "test/examples_test",
 					"childIndexes" : 
 					[
-						35,
-						36,
-						37
+						38,
+						39,
+						40,
+						41
 					],
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.8"
 					},
-					"parentIndex" : 29,
+					"parentIndex" : 32,
 					"projectIndex" : 0,
 					"source" : "test/examples_test"
 				},
@@ -547,7 +594,7 @@
 					{
 						"string" : "3.8"
 					},
-					"parentIndex" : 34,
+					"parentIndex" : 37,
 					"projectIndex" : 0,
 					"source" : "test/examples_test/01_module_test",
 					"targetIndexes" : 
@@ -561,7 +608,7 @@
 					{
 						"string" : "3.8"
 					},
-					"parentIndex" : 34,
+					"parentIndex" : 37,
 					"projectIndex" : 0,
 					"source" : "test/examples_test/02_module_test",
 					"targetIndexes" : 
@@ -575,7 +622,7 @@
 					{
 						"string" : "3.8"
 					},
-					"parentIndex" : 34,
+					"parentIndex" : 37,
 					"projectIndex" : 0,
 					"source" : "test/examples_test/03_module_test",
 					"targetIndexes" : 
@@ -584,18 +631,33 @@
 					]
 				},
 				{
+					"build" : "test/examples_test/04_module_test",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 37,
+					"projectIndex" : 0,
+					"source" : "test/examples_test/04_module_test",
+					"targetIndexes" : 
+					[
+						44
+					]
+				},
+				{
 					"build" : "test/homework_test",
 					"childIndexes" : 
 					[
-						39,
-						40,
-						41
+						43,
+						44,
+						45,
+						46
 					],
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.8"
 					},
-					"parentIndex" : 29,
+					"parentIndex" : 32,
 					"projectIndex" : 0,
 					"source" : "test/homework_test"
 				},
@@ -605,12 +667,12 @@
 					{
 						"string" : "3.8"
 					},
-					"parentIndex" : 38,
+					"parentIndex" : 42,
 					"projectIndex" : 0,
 					"source" : "test/homework_test/01_expressions_test",
 					"targetIndexes" : 
 					[
-						44
+						47
 					]
 				},
 				{
@@ -619,12 +681,12 @@
 					{
 						"string" : "3.8"
 					},
-					"parentIndex" : 38,
+					"parentIndex" : 42,
 					"projectIndex" : 0,
 					"source" : "test/homework_test/02_decisions_test",
 					"targetIndexes" : 
 					[
-						47
+						50
 					]
 				},
 				{
@@ -633,12 +695,26 @@
 					{
 						"string" : "3.8"
 					},
-					"parentIndex" : 38,
+					"parentIndex" : 42,
 					"projectIndex" : 0,
 					"source" : "test/homework_test/03_iteration_test",
 					"targetIndexes" : 
 					[
-						50
+						53
+					]
+				},
+				{
+					"build" : "test/homework_test/04_vectors_test",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 42,
+					"projectIndex" : 0,
+					"source" : "test/homework_test/04_vectors_test",
+					"targetIndexes" : 
+					[
+						56
 					]
 				}
 			],
@@ -678,8 +754,8 @@
 						23,
 						24,
 						25,
+						26,
 						27,
-						28,
 						29,
 						30,
 						31,
@@ -692,7 +768,12 @@
 						38,
 						39,
 						40,
-						41
+						41,
+						42,
+						43,
+						44,
+						45,
+						46
 					],
 					"name" : "cosc1337",
 					"targetIndexes" : 
@@ -735,13 +816,19 @@
 						39,
 						40,
 						41,
+						42,
+						43,
 						44,
-						45,
-						46,
 						47,
 						48,
 						49,
-						50
+						50,
+						51,
+						52,
+						53,
+						54,
+						55,
+						56
 					]
 				},
 				{
@@ -773,14 +860,14 @@
 				{
 					"directoryIndexes" : 
 					[
-						26
+						28
 					],
 					"name" : "hw_01_library",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						42,
-						43
+						45,
+						46
 					]
 				}
 			],
@@ -801,7 +888,7 @@
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 31,
+					"directoryIndex" : 34,
 					"id" : "cw_01_tests::@bdea48b4947479e5fa65",
 					"jsonFile" : "target-cw_01_tests-Debug-908115041296251673a3.json",
 					"name" : "cw_01_tests",
@@ -822,7 +909,7 @@
 					"projectIndex" : 2
 				},
 				{
-					"directoryIndex" : 32,
+					"directoryIndex" : 35,
 					"id" : "cw_02_tests::@2a55bf52c33561115735",
 					"jsonFile" : "target-cw_02_tests-Debug-ff0a980ff4c140675100.json",
 					"name" : "cw_02_tests",
@@ -843,7 +930,7 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 33,
+					"directoryIndex" : 36,
 					"id" : "cw_03_tests::@58ec20b27cb83ae5a36c",
 					"jsonFile" : "target-cw_03_tests-Debug-9773c9610dc534c9d360.json",
 					"name" : "cw_03_tests",
@@ -920,9 +1007,9 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 35,
+					"directoryIndex" : 38,
 					"id" : "ex_01_tests::@db0f1d96db498c721363",
-					"jsonFile" : "target-ex_01_tests-Debug-9a0f30902d57108cd7bd.json",
+					"jsonFile" : "target-ex_01_tests-Debug-63a842375d79319cc0be.json",
 					"name" : "ex_01_tests",
 					"projectIndex" : 0
 				},
@@ -969,9 +1056,9 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 36,
+					"directoryIndex" : 39,
 					"id" : "ex_02_tests::@f0478fca52f7d9c22e23",
-					"jsonFile" : "target-ex_02_tests-Debug-c8d0725ac9b49c0c64b3.json",
+					"jsonFile" : "target-ex_02_tests-Debug-39a9bfef603944fd1ffd.json",
 					"name" : "ex_02_tests",
 					"projectIndex" : 0
 				},
@@ -1074,73 +1161,115 @@
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 37,
+					"directoryIndex" : 40,
 					"id" : "ex_03_tests::@3e5c8e731de3e22faed5",
-					"jsonFile" : "target-ex_03_tests-Debug-a501e522749a64486ddb.json",
+					"jsonFile" : "target-ex_03_tests-Debug-5874331285d7a0da277f.json",
 					"name" : "ex_03_tests",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 26,
+					"id" : "ex_04_01_exe::@4e2faa1e2196244484c0",
+					"jsonFile" : "target-ex_04_01_exe-Debug-3f588f717a2f8ac599f2.json",
+					"name" : "ex_04_01_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 26,
+					"id" : "ex_04_01_library::@4e2faa1e2196244484c0",
+					"jsonFile" : "target-ex_04_01_library-Debug-3a4d0017f1015bde9917.json",
+					"name" : "ex_04_01_library",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 41,
+					"id" : "ex_04_tests::@a6224bf2190e93d7f735",
+					"jsonFile" : "target-ex_04_tests-Debug-bcb1133f0d4aaf7a4160.json",
+					"name" : "ex_04_tests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 28,
 					"id" : "hw_01_exe::@50b71cec73936b473d46",
 					"jsonFile" : "target-hw_01_exe-Debug-f7b7e3b8f38cbd00da48.json",
 					"name" : "hw_01_exe",
 					"projectIndex" : 3
 				},
 				{
-					"directoryIndex" : 26,
+					"directoryIndex" : 28,
 					"id" : "hw_01_library::@50b71cec73936b473d46",
 					"jsonFile" : "target-hw_01_library-Debug-403e668c56b8114c889c.json",
 					"name" : "hw_01_library",
 					"projectIndex" : 3
 				},
 				{
-					"directoryIndex" : 39,
+					"directoryIndex" : 43,
 					"id" : "hw_01_tests::@093e6e340bc47a54461f",
 					"jsonFile" : "target-hw_01_tests-Debug-d2c34571d12749e1feec.json",
 					"name" : "hw_01_tests",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 27,
+					"directoryIndex" : 29,
 					"id" : "hw_02_exe::@4cb7534b7b8a33e60871",
 					"jsonFile" : "target-hw_02_exe-Debug-594d03263dc317e24e41.json",
 					"name" : "hw_02_exe",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 27,
+					"directoryIndex" : 29,
 					"id" : "hw_02_library::@4cb7534b7b8a33e60871",
 					"jsonFile" : "target-hw_02_library-Debug-fd3802c042b9142b51f4.json",
 					"name" : "hw_02_library",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 40,
+					"directoryIndex" : 44,
 					"id" : "hw_02_tests::@3ca707afc2d720b769d4",
 					"jsonFile" : "target-hw_02_tests-Debug-df258aaf2a5de6ce08ee.json",
 					"name" : "hw_02_tests",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 28,
+					"directoryIndex" : 30,
 					"id" : "hw_03_exe::@02e066f6c0a510b3e0ec",
 					"jsonFile" : "target-hw_03_exe-Debug-2c6509228375acf2d3fa.json",
 					"name" : "hw_03_exe",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 28,
+					"directoryIndex" : 30,
 					"id" : "hw_03_library::@02e066f6c0a510b3e0ec",
 					"jsonFile" : "target-hw_03_library-Debug-b95c3ac8c75001930893.json",
 					"name" : "hw_03_library",
 					"projectIndex" : 0
 				},
 				{
-					"directoryIndex" : 41,
+					"directoryIndex" : 45,
 					"id" : "hw_03_tests::@ca0ca56a9be3d432fd1a",
 					"jsonFile" : "target-hw_03_tests-Debug-7ed430d110d87079bd20.json",
 					"name" : "hw_03_tests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 31,
+					"id" : "hw_04_exe::@2aee3304f88c812540ff",
+					"jsonFile" : "target-hw_04_exe-Debug-50d7783eeb3a7f34838a.json",
+					"name" : "hw_04_exe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 31,
+					"id" : "hw_04_library::@2aee3304f88c812540ff",
+					"jsonFile" : "target-hw_04_library-Debug-bccfbae812715a2955a4.json",
+					"name" : "hw_04_library",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 46,
+					"id" : "hw_04_tests::@af11d39fc4e64e03be2e",
+					"jsonFile" : "target-hw_04_tests-Debug-fe81809c607ec7b20831.json",
+					"name" : "hw_04_tests",
 					"projectIndex" : 0
 				}
 			]

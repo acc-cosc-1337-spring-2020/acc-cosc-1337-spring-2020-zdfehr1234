@@ -7,3 +7,4 @@
 subdirs("01_expressions_test")
 subdirs("02_decisions_test")
 subdirs("03_iteration_test")
+subdirs("04_vectors_test")
