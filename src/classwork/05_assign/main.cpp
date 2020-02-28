@@ -21,15 +21,15 @@ int main()
 	int total{ 0 };
 	vector<Rect> rectangles{ Rect(4,5),Rect(10,10),Rect(100,10) };
 
-	cout << "Area of each rectangle: \n";
+	cout << "Area of each rectangle: ";
 
 	for (auto rec : rectangles)
 	{
 		area = rec.get_area();
 		total += area;
-		cout << area << "\n";
+		cout << area << "\t";
 	}
 
-	cout << "Total area of all rectangles: " << total;
+	cout << "\nTotal area of all rectangles: " << total;
 	return 0;
 }
