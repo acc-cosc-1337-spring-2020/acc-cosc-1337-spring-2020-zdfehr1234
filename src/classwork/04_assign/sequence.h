@@ -1,4 +1,8 @@
 //write include statements for string and vector
+#include <string>
+#include <vector>
+
+using std::string; std::vector;
 
 
 /*
