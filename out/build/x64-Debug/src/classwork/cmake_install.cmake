@@ -37,6 +37,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/classwork/01_assign/cmake_install.cmake")
   include("C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/classwork/02_assign/cmake_install.cmake")
   include("C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/classwork/03_assign/cmake_install.cmake")
+  include("C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/classwork/05_assign/cmake_install.cmake")
 
 endif()
 

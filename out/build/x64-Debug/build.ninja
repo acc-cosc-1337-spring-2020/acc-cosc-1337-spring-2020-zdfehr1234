@@ -506,6 +506,126 @@ build src\classwork\03_assign\edit_cache: phony src\classwork\03_assign\CMakeFil
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
+# C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/src/classwork/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target cw_05_library
+
+
+#############################################
+# Order-only phony target for cw_05_library
+
+build cmake_object_order_depends_target_cw_05_library: phony || src\classwork\05_assign\CMakeFiles\cw_05_library.dir
+
+build src\classwork\05_assign\CMakeFiles\cw_05_library.dir\rectangle.cpp.obj: CXX_COMPILER__cw_05_library ..\..\..\src\classwork\05_assign\rectangle.cpp || cmake_object_order_depends_target_cw_05_library
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
+  OBJECT_DIR = src\classwork\05_assign\CMakeFiles\cw_05_library.dir
+  OBJECT_FILE_DIR = src\classwork\05_assign\CMakeFiles\cw_05_library.dir
+  TARGET_COMPILE_PDB = src\classwork\05_assign\CMakeFiles\cw_05_library.dir\cw_05_library.pdb
+  TARGET_PDB = src\classwork\05_assign\cw_05_library.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target cw_05_library
+
+
+#############################################
+# Link the static library src\classwork\05_assign\cw_05_library.lib
+
+build src\classwork\05_assign\cw_05_library.lib: CXX_STATIC_LIBRARY_LINKER__cw_05_library src\classwork\05_assign\CMakeFiles\cw_05_library.dir\rectangle.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = src\classwork\05_assign\CMakeFiles\cw_05_library.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = src\classwork\05_assign\CMakeFiles\cw_05_library.dir\cw_05_library.pdb
+  TARGET_FILE = src\classwork\05_assign\cw_05_library.lib
+  TARGET_PDB = src\classwork\05_assign\cw_05_library.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build src\classwork\05_assign\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\zferh\source\repos\acc-cosc-1337-spring-2020-zdfehr1234\out\build\x64-Debug\src\classwork\05_assign && E:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src\classwork\05_assign\edit_cache: phony src\classwork\05_assign\CMakeFiles\edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target cw_05_exe
+
+
+#############################################
+# Order-only phony target for cw_05_exe
+
+build cmake_object_order_depends_target_cw_05_exe: phony || src\classwork\05_assign\CMakeFiles\cw_05_exe.dir
+
+build src\classwork\05_assign\CMakeFiles\cw_05_exe.dir\main.cpp.obj: CXX_COMPILER__cw_05_exe ..\..\..\src\classwork\05_assign\main.cpp || cmake_object_order_depends_target_cw_05_exe
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
+  OBJECT_DIR = src\classwork\05_assign\CMakeFiles\cw_05_exe.dir
+  OBJECT_FILE_DIR = src\classwork\05_assign\CMakeFiles\cw_05_exe.dir
+  TARGET_COMPILE_PDB = src\classwork\05_assign\CMakeFiles\cw_05_exe.dir\
+  TARGET_PDB = src\classwork\05_assign\cw_05_exe.pdb
+
+build src\classwork\05_assign\CMakeFiles\cw_05_exe.dir\rectangle.cpp.obj: CXX_COMPILER__cw_05_exe ..\..\..\src\classwork\05_assign\rectangle.cpp || cmake_object_order_depends_target_cw_05_exe
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
+  OBJECT_DIR = src\classwork\05_assign\CMakeFiles\cw_05_exe.dir
+  OBJECT_FILE_DIR = src\classwork\05_assign\CMakeFiles\cw_05_exe.dir
+  TARGET_COMPILE_PDB = src\classwork\05_assign\CMakeFiles\cw_05_exe.dir\
+  TARGET_PDB = src\classwork\05_assign\cw_05_exe.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target cw_05_exe
+
+
+#############################################
+# Link the executable src\classwork\05_assign\cw_05_exe.exe
+
+build src\classwork\05_assign\cw_05_exe.exe: CXX_EXECUTABLE_LINKER__cw_05_exe src\classwork\05_assign\CMakeFiles\cw_05_exe.dir\main.cpp.obj src\classwork\05_assign\CMakeFiles\cw_05_exe.dir\rectangle.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = src\classwork\05_assign\CMakeFiles\cw_05_exe.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = src\classwork\05_assign\CMakeFiles\cw_05_exe.dir\
+  TARGET_FILE = src\classwork\05_assign\cw_05_exe.exe
+  TARGET_IMPLIB = src\classwork\05_assign\cw_05_exe.lib
+  TARGET_PDB = src\classwork\05_assign\cw_05_exe.pdb
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src\classwork\05_assign\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\zferh\source\repos\acc-cosc-1337-spring-2020-zdfehr1234\out\build\x64-Debug\src\classwork\05_assign && E:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SC:\Users\zferh\source\repos\acc-cosc-1337-spring-2020-zdfehr1234 -BC:\Users\zferh\source\repos\acc-cosc-1337-spring-2020-zdfehr1234\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src\classwork\05_assign\rebuild_cache: phony src\classwork\05_assign\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for test
+
+build src\classwork\05_assign\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\zferh\source\repos\acc-cosc-1337-spring-2020-zdfehr1234\out\build\x64-Debug\src\classwork\05_assign && E:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build src\classwork\05_assign\test: phony src\classwork\05_assign\CMakeFiles\test.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
 # C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/src/CMakeLists.txt
 # =============================================================================
 
@@ -3226,6 +3346,190 @@ build src\homework\04_vectors\edit_cache: phony src\homework\04_vectors\CMakeFil
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
+# C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/src/homework/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target tic_tac_toe_library
+
+
+#############################################
+# Order-only phony target for tic_tac_toe_library
+
+build cmake_object_order_depends_target_tic_tac_toe_library: phony || src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir
+
+build src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir\tic_tac_toe.cpp.obj: CXX_COMPILER__tic_tac_toe_library ..\..\..\src\homework\tic_tac_toe\tic_tac_toe.cpp || cmake_object_order_depends_target_tic_tac_toe_library
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
+  OBJECT_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir
+  OBJECT_FILE_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir
+  TARGET_COMPILE_PDB = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir\tic_tac_toe_library.pdb
+  TARGET_PDB = src\homework\tic_tac_toe\tic_tac_toe_library.pdb
+
+build src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir\tic_tac_toe_3.cpp.obj: CXX_COMPILER__tic_tac_toe_library ..\..\..\src\homework\tic_tac_toe\tic_tac_toe_3.cpp || cmake_object_order_depends_target_tic_tac_toe_library
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
+  OBJECT_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir
+  OBJECT_FILE_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir
+  TARGET_COMPILE_PDB = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir\tic_tac_toe_library.pdb
+  TARGET_PDB = src\homework\tic_tac_toe\tic_tac_toe_library.pdb
+
+build src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir\tic_tac_toe_4.cpp.obj: CXX_COMPILER__tic_tac_toe_library ..\..\..\src\homework\tic_tac_toe\tic_tac_toe_4.cpp || cmake_object_order_depends_target_tic_tac_toe_library
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
+  OBJECT_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir
+  OBJECT_FILE_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir
+  TARGET_COMPILE_PDB = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir\tic_tac_toe_library.pdb
+  TARGET_PDB = src\homework\tic_tac_toe\tic_tac_toe_library.pdb
+
+build src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir\tic_tac_toe_manager.cpp.obj: CXX_COMPILER__tic_tac_toe_library ..\..\..\src\homework\tic_tac_toe\tic_tac_toe_manager.cpp || cmake_object_order_depends_target_tic_tac_toe_library
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
+  OBJECT_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir
+  OBJECT_FILE_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir
+  TARGET_COMPILE_PDB = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir\tic_tac_toe_library.pdb
+  TARGET_PDB = src\homework\tic_tac_toe\tic_tac_toe_library.pdb
+
+build src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir\tic_tac_toe_data.cpp.obj: CXX_COMPILER__tic_tac_toe_library ..\..\..\src\homework\tic_tac_toe\tic_tac_toe_data.cpp || cmake_object_order_depends_target_tic_tac_toe_library
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
+  OBJECT_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir
+  OBJECT_FILE_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir
+  TARGET_COMPILE_PDB = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir\tic_tac_toe_library.pdb
+  TARGET_PDB = src\homework\tic_tac_toe\tic_tac_toe_library.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target tic_tac_toe_library
+
+
+#############################################
+# Link the static library src\homework\tic_tac_toe\tic_tac_toe_library.lib
+
+build src\homework\tic_tac_toe\tic_tac_toe_library.lib: CXX_STATIC_LIBRARY_LINKER__tic_tac_toe_library src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir\tic_tac_toe.cpp.obj src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir\tic_tac_toe_3.cpp.obj src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir\tic_tac_toe_4.cpp.obj src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir\tic_tac_toe_manager.cpp.obj src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir\tic_tac_toe_data.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_library.dir\tic_tac_toe_library.pdb
+  TARGET_FILE = src\homework\tic_tac_toe\tic_tac_toe_library.lib
+  TARGET_PDB = src\homework\tic_tac_toe\tic_tac_toe_library.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build src\homework\tic_tac_toe\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\zferh\source\repos\acc-cosc-1337-spring-2020-zdfehr1234\out\build\x64-Debug\src\homework\tic_tac_toe && E:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src\homework\tic_tac_toe\edit_cache: phony src\homework\tic_tac_toe\CMakeFiles\edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target tic_tac_toe_exe
+
+
+#############################################
+# Order-only phony target for tic_tac_toe_exe
+
+build cmake_object_order_depends_target_tic_tac_toe_exe: phony || src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir
+
+build src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir\main.cpp.obj: CXX_COMPILER__tic_tac_toe_exe ..\..\..\src\homework\tic_tac_toe\main.cpp || cmake_object_order_depends_target_tic_tac_toe_exe
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
+  OBJECT_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir
+  OBJECT_FILE_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir
+  TARGET_COMPILE_PDB = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir\
+  TARGET_PDB = src\homework\tic_tac_toe\tic_tac_toe_exe.pdb
+
+build src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir\tic_tac_toe.cpp.obj: CXX_COMPILER__tic_tac_toe_exe ..\..\..\src\homework\tic_tac_toe\tic_tac_toe.cpp || cmake_object_order_depends_target_tic_tac_toe_exe
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
+  OBJECT_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir
+  OBJECT_FILE_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir
+  TARGET_COMPILE_PDB = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir\
+  TARGET_PDB = src\homework\tic_tac_toe\tic_tac_toe_exe.pdb
+
+build src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir\tic_tac_toe_3.cpp.obj: CXX_COMPILER__tic_tac_toe_exe ..\..\..\src\homework\tic_tac_toe\tic_tac_toe_3.cpp || cmake_object_order_depends_target_tic_tac_toe_exe
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
+  OBJECT_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir
+  OBJECT_FILE_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir
+  TARGET_COMPILE_PDB = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir\
+  TARGET_PDB = src\homework\tic_tac_toe\tic_tac_toe_exe.pdb
+
+build src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir\tic_tac_toe_4.cpp.obj: CXX_COMPILER__tic_tac_toe_exe ..\..\..\src\homework\tic_tac_toe\tic_tac_toe_4.cpp || cmake_object_order_depends_target_tic_tac_toe_exe
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
+  OBJECT_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir
+  OBJECT_FILE_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir
+  TARGET_COMPILE_PDB = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir\
+  TARGET_PDB = src\homework\tic_tac_toe\tic_tac_toe_exe.pdb
+
+build src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir\tic_tac_toe_manager.cpp.obj: CXX_COMPILER__tic_tac_toe_exe ..\..\..\src\homework\tic_tac_toe\tic_tac_toe_manager.cpp || cmake_object_order_depends_target_tic_tac_toe_exe
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
+  OBJECT_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir
+  OBJECT_FILE_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir
+  TARGET_COMPILE_PDB = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir\
+  TARGET_PDB = src\homework\tic_tac_toe\tic_tac_toe_exe.pdb
+
+build src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir\tic_tac_toe_data.cpp.obj: CXX_COMPILER__tic_tac_toe_exe ..\..\..\src\homework\tic_tac_toe\tic_tac_toe_data.cpp || cmake_object_order_depends_target_tic_tac_toe_exe
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
+  OBJECT_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir
+  OBJECT_FILE_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir
+  TARGET_COMPILE_PDB = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir\
+  TARGET_PDB = src\homework\tic_tac_toe\tic_tac_toe_exe.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target tic_tac_toe_exe
+
+
+#############################################
+# Link the executable src\homework\tic_tac_toe\tic_tac_toe_exe.exe
+
+build src\homework\tic_tac_toe\tic_tac_toe_exe.exe: CXX_EXECUTABLE_LINKER__tic_tac_toe_exe src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir\main.cpp.obj src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir\tic_tac_toe.cpp.obj src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir\tic_tac_toe_3.cpp.obj src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir\tic_tac_toe_4.cpp.obj src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir\tic_tac_toe_manager.cpp.obj src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir\tic_tac_toe_data.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = src\homework\tic_tac_toe\CMakeFiles\tic_tac_toe_exe.dir\
+  TARGET_FILE = src\homework\tic_tac_toe\tic_tac_toe_exe.exe
+  TARGET_IMPLIB = src\homework\tic_tac_toe\tic_tac_toe_exe.lib
+  TARGET_PDB = src\homework\tic_tac_toe\tic_tac_toe_exe.pdb
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src\homework\tic_tac_toe\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\zferh\source\repos\acc-cosc-1337-spring-2020-zdfehr1234\out\build\x64-Debug\src\homework\tic_tac_toe && E:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SC:\Users\zferh\source\repos\acc-cosc-1337-spring-2020-zdfehr1234 -BC:\Users\zferh\source\repos\acc-cosc-1337-spring-2020-zdfehr1234\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src\homework\tic_tac_toe\rebuild_cache: phony src\homework\tic_tac_toe\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for test
+
+build src\homework\tic_tac_toe\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\zferh\source\repos\acc-cosc-1337-spring-2020-zdfehr1234\out\build\x64-Debug\src\homework\tic_tac_toe && E:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build src\homework\tic_tac_toe\test: phony src\homework\tic_tac_toe\CMakeFiles\test.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
 # C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/CMakeLists.txt
 # =============================================================================
 
@@ -3534,6 +3838,83 @@ build test\classwork_test\03_assign_test\CMakeFiles\edit_cache.util: CUSTOM_COMM
   restat = 1
 
 build test\classwork_test\03_assign_test\edit_cache: phony test\classwork_test\03_assign_test\CMakeFiles\edit_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/test/classwork_test/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build test\classwork_test\05_assign_test\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\zferh\source\repos\acc-cosc-1337-spring-2020-zdfehr1234\out\build\x64-Debug\test\classwork_test\05_assign_test && E:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SC:\Users\zferh\source\repos\acc-cosc-1337-spring-2020-zdfehr1234 -BC:\Users\zferh\source\repos\acc-cosc-1337-spring-2020-zdfehr1234\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build test\classwork_test\05_assign_test\rebuild_cache: phony test\classwork_test\05_assign_test\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for test
+
+build test\classwork_test\05_assign_test\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\zferh\source\repos\acc-cosc-1337-spring-2020-zdfehr1234\out\build\x64-Debug\test\classwork_test\05_assign_test && E:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test\classwork_test\05_assign_test\test: phony test\classwork_test\05_assign_test\CMakeFiles\test.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target cw_05_tests
+
+
+#############################################
+# Order-only phony target for cw_05_tests
+
+build cmake_object_order_depends_target_cw_05_tests: phony || cmake_object_order_depends_target_cw_05_library
+
+build test\classwork_test\05_assign_test\CMakeFiles\cw_05_tests.dir\rectangle_tests.cpp.obj: CXX_COMPILER__cw_05_tests ..\..\..\test\classwork_test\05_assign_test\rectangle_tests.cpp || cmake_object_order_depends_target_cw_05_tests
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
+  OBJECT_DIR = test\classwork_test\05_assign_test\CMakeFiles\cw_05_tests.dir
+  OBJECT_FILE_DIR = test\classwork_test\05_assign_test\CMakeFiles\cw_05_tests.dir
+  TARGET_COMPILE_PDB = test\classwork_test\05_assign_test\CMakeFiles\cw_05_tests.dir\
+  TARGET_PDB = test\classwork_test\05_assign_test\cw_05_tests.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target cw_05_tests
+
+
+#############################################
+# Link the executable test\classwork_test\05_assign_test\cw_05_tests.exe
+
+build test\classwork_test\05_assign_test\cw_05_tests.exe: CXX_EXECUTABLE_LINKER__cw_05_tests test\classwork_test\05_assign_test\CMakeFiles\cw_05_tests.dir\rectangle_tests.cpp.obj | src\classwork\05_assign\cw_05_library.lib || src\classwork\05_assign\cw_05_library.lib
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = src\classwork\05_assign\cw_05_library.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = test\classwork_test\05_assign_test\CMakeFiles\cw_05_tests.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = test\classwork_test\05_assign_test\CMakeFiles\cw_05_tests.dir\
+  TARGET_FILE = test\classwork_test\05_assign_test\cw_05_tests.exe
+  TARGET_IMPLIB = test\classwork_test\05_assign_test\cw_05_tests.lib
+  TARGET_PDB = test\classwork_test\05_assign_test\cw_05_tests.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build test\classwork_test\05_assign_test\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\zferh\source\repos\acc-cosc-1337-spring-2020-zdfehr1234\out\build\x64-Debug\test\classwork_test\05_assign_test && E:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build test\classwork_test\05_assign_test\edit_cache: phony test\classwork_test\05_assign_test\CMakeFiles\edit_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -4232,6 +4613,83 @@ build test\homework_test\04_vectors_test\CMakeFiles\edit_cache.util: CUSTOM_COMM
 build test\homework_test\04_vectors_test\edit_cache: phony test\homework_test\04_vectors_test\CMakeFiles\edit_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/test/homework_test/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target tic_tac_toe_test
+
+
+#############################################
+# Order-only phony target for tic_tac_toe_test
+
+build cmake_object_order_depends_target_tic_tac_toe_test: phony || cmake_object_order_depends_target_tic_tac_toe_library
+
+build test\homework_test\tic_tac_toe_test\CMakeFiles\tic_tac_toe_test.dir\tic_tac_toe_test.cpp.obj: CXX_COMPILER__tic_tac_toe_test ..\..\..\test\homework_test\tic_tac_toe_test\tic_tac_toe_test.cpp || cmake_object_order_depends_target_tic_tac_toe_test
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
+  OBJECT_DIR = test\homework_test\tic_tac_toe_test\CMakeFiles\tic_tac_toe_test.dir
+  OBJECT_FILE_DIR = test\homework_test\tic_tac_toe_test\CMakeFiles\tic_tac_toe_test.dir
+  TARGET_COMPILE_PDB = test\homework_test\tic_tac_toe_test\CMakeFiles\tic_tac_toe_test.dir\
+  TARGET_PDB = test\homework_test\tic_tac_toe_test\tic_tac_toe_test.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target tic_tac_toe_test
+
+
+#############################################
+# Link the executable test\homework_test\tic_tac_toe_test\tic_tac_toe_test.exe
+
+build test\homework_test\tic_tac_toe_test\tic_tac_toe_test.exe: CXX_EXECUTABLE_LINKER__tic_tac_toe_test test\homework_test\tic_tac_toe_test\CMakeFiles\tic_tac_toe_test.dir\tic_tac_toe_test.cpp.obj | src\homework\tic_tac_toe\tic_tac_toe_library.lib || src\homework\tic_tac_toe\tic_tac_toe_library.lib
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = src\homework\tic_tac_toe\tic_tac_toe_library.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = test\homework_test\tic_tac_toe_test\CMakeFiles\tic_tac_toe_test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = test\homework_test\tic_tac_toe_test\CMakeFiles\tic_tac_toe_test.dir\
+  TARGET_FILE = test\homework_test\tic_tac_toe_test\tic_tac_toe_test.exe
+  TARGET_IMPLIB = test\homework_test\tic_tac_toe_test\tic_tac_toe_test.lib
+  TARGET_PDB = test\homework_test\tic_tac_toe_test\tic_tac_toe_test.pdb
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build test\homework_test\tic_tac_toe_test\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\zferh\source\repos\acc-cosc-1337-spring-2020-zdfehr1234\out\build\x64-Debug\test\homework_test\tic_tac_toe_test && E:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SC:\Users\zferh\source\repos\acc-cosc-1337-spring-2020-zdfehr1234 -BC:\Users\zferh\source\repos\acc-cosc-1337-spring-2020-zdfehr1234\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build test\homework_test\tic_tac_toe_test\rebuild_cache: phony test\homework_test\tic_tac_toe_test\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for test
+
+build test\homework_test\tic_tac_toe_test\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\zferh\source\repos\acc-cosc-1337-spring-2020-zdfehr1234\out\build\x64-Debug\test\homework_test\tic_tac_toe_test && E:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test\homework_test\tic_tac_toe_test\test: phony test\homework_test\tic_tac_toe_test\CMakeFiles\test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build test\homework_test\tic_tac_toe_test\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\zferh\source\repos\acc-cosc-1337-spring-2020-zdfehr1234\out\build\x64-Debug\test\homework_test\tic_tac_toe_test && E:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build test\homework_test\tic_tac_toe_test\edit_cache: phony test\homework_test\tic_tac_toe_test\CMakeFiles\edit_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build cw_01_exe: phony src\classwork\01_assign\cw_01_exe.exe
@@ -4269,6 +4727,18 @@ build cw_03_library.lib: phony src\classwork\03_assign\cw_03_library.lib
 build cw_03_tests: phony test\classwork_test\03_assign_test\cw_03_tests.exe
 
 build cw_03_tests.exe: phony test\classwork_test\03_assign_test\cw_03_tests.exe
+
+build cw_05_exe: phony src\classwork\05_assign\cw_05_exe.exe
+
+build cw_05_exe.exe: phony src\classwork\05_assign\cw_05_exe.exe
+
+build cw_05_library: phony src\classwork\05_assign\cw_05_library.lib
+
+build cw_05_library.lib: phony src\classwork\05_assign\cw_05_library.lib
+
+build cw_05_tests: phony test\classwork_test\05_assign_test\cw_05_tests.exe
+
+build cw_05_tests.exe: phony test\classwork_test\05_assign_test\cw_05_tests.exe
 
 build ex_01_01_exe: phony src\examples\01_module\01_output\ex_01_01_exe.exe
 
@@ -4462,6 +4932,18 @@ build hw_04_tests: phony test\homework_test\04_vectors_test\hw_04_tests.exe
 
 build hw_04_tests.exe: phony test\homework_test\04_vectors_test\hw_04_tests.exe
 
+build tic_tac_toe_exe: phony src\homework\tic_tac_toe\tic_tac_toe_exe.exe
+
+build tic_tac_toe_exe.exe: phony src\homework\tic_tac_toe\tic_tac_toe_exe.exe
+
+build tic_tac_toe_library: phony src\homework\tic_tac_toe\tic_tac_toe_library.lib
+
+build tic_tac_toe_library.lib: phony src\homework\tic_tac_toe\tic_tac_toe_library.lib
+
+build tic_tac_toe_test: phony test\homework_test\tic_tac_toe_test\tic_tac_toe_test.exe
+
+build tic_tac_toe_test.exe: phony test\homework_test\tic_tac_toe_test\tic_tac_toe_test.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -4477,7 +4959,7 @@ build src\all: phony src\classwork\all src\examples\all src\homework\all
 #############################################
 # Folder: C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/classwork
 
-build src\classwork\all: phony src\classwork\01_assign\all src\classwork\02_assign\all src\classwork\03_assign\all
+build src\classwork\all: phony src\classwork\01_assign\all src\classwork\02_assign\all src\classwork\03_assign\all src\classwork\05_assign\all
 
 # =============================================================================
 
@@ -4499,6 +4981,13 @@ build src\classwork\02_assign\all: phony cw_02_library cw_02_exe
 # Folder: C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/classwork/03_assign
 
 build src\classwork\03_assign\all: phony cw_03_library cw_03_exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/classwork/05_assign
+
+build src\classwork\05_assign\all: phony cw_05_library cw_05_exe
 
 # =============================================================================
 
@@ -4652,7 +5141,7 @@ build src\examples\04_module\01_bank\all: phony ex_04_01_library ex_04_01_exe
 #############################################
 # Folder: C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/homework
 
-build src\homework\all: phony src\homework\01_expressions\all src\homework\02_decisions\all src\homework\03_iteration\all src\homework\04_vectors\all
+build src\homework\all: phony src\homework\01_expressions\all src\homework\02_decisions\all src\homework\03_iteration\all src\homework\04_vectors\all src\homework\tic_tac_toe\all
 
 # =============================================================================
 
@@ -4685,6 +5174,13 @@ build src\homework\04_vectors\all: phony hw_04_library hw_04_exe
 # =============================================================================
 
 #############################################
+# Folder: C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/homework/tic_tac_toe
+
+build src\homework\tic_tac_toe\all: phony tic_tac_toe_library tic_tac_toe_exe
+
+# =============================================================================
+
+#############################################
 # Folder: C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test
 
 build test\all: phony test\classwork_test\all test\examples_test\all test\homework_test\all
@@ -4694,7 +5190,7 @@ build test\all: phony test\classwork_test\all test\examples_test\all test\homewo
 #############################################
 # Folder: C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/classwork_test
 
-build test\classwork_test\all: phony test\classwork_test\01_assign_test\all test\classwork_test\02_assign_test\all test\classwork_test\03_assign_test\all
+build test\classwork_test\all: phony test\classwork_test\01_assign_test\all test\classwork_test\02_assign_test\all test\classwork_test\03_assign_test\all test\classwork_test\05_assign_test\all
 
 # =============================================================================
 
@@ -4716,6 +5212,13 @@ build test\classwork_test\02_assign_test\all: phony cw_02_tests
 # Folder: C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/classwork_test/03_assign_test
 
 build test\classwork_test\03_assign_test\all: phony cw_03_tests
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/classwork_test/05_assign_test
+
+build test\classwork_test\05_assign_test\all: phony cw_05_tests
 
 # =============================================================================
 
@@ -4757,7 +5260,7 @@ build test\examples_test\04_module_test\all: phony ex_04_tests
 #############################################
 # Folder: C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/homework_test
 
-build test\homework_test\all: phony test\homework_test\01_expressions_test\all test\homework_test\02_decisions_test\all test\homework_test\03_iteration_test\all test\homework_test\04_vectors_test\all
+build test\homework_test\all: phony test\homework_test\01_expressions_test\all test\homework_test\02_decisions_test\all test\homework_test\03_iteration_test\all test\homework_test\04_vectors_test\all test\homework_test\tic_tac_toe_test\all
 
 # =============================================================================
 
@@ -4788,13 +5291,20 @@ build test\homework_test\03_iteration_test\all: phony hw_03_tests
 build test\homework_test\04_vectors_test\all: phony hw_04_tests
 
 # =============================================================================
+
+#############################################
+# Folder: C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/homework_test/tic_tac_toe_test
+
+build test\homework_test\tic_tac_toe_test\all: phony tic_tac_toe_test
+
+# =============================================================================
 # Built-in targets
 
 
 #############################################
 # The main all target.
 
-build all: phony src\classwork\01_assign\cw_01_library.lib src\classwork\01_assign\cw_01_exe.exe src\classwork\02_assign\cw_02_library.lib src\classwork\02_assign\cw_02_exe.exe src\classwork\03_assign\cw_03_library.lib src\classwork\03_assign\cw_03_exe.exe src\examples\01_module\01_output\ex_01_01_library.lib src\examples\01_module\01_output\ex_01_01_exe.exe src\examples\01_module\02_variables\ex_01_02_library.lib src\examples\01_module\02_variables\ex_01_02_exe.exe src\examples\01_module\03_input\ex_01_03_library.lib src\examples\01_module\03_input\ex_01_03_exe.exe src\examples\01_module\04_expressions\ex_01_04_library.lib src\examples\01_module\04_expressions\ex_01_04_exe.exe src\examples\01_module\05_auto\ex_01_05_library.lib src\examples\01_module\05_auto\ex_01_05_exe.exe src\examples\02_module\01_if\ex_02_01_library.lib src\examples\02_module\01_if\ex_02_01_exe.exe src\examples\02_module\02_if_else\ex_02_02_library.lib src\examples\02_module\02_if_else\ex_02_02_exe.exe src\examples\02_module\03_switch\ex_02_03_library.lib src\examples\02_module\03_switch\ex_02_03_exe.exe src\examples\03_module\01_while\ex_03_01_library.lib src\examples\03_module\01_while\ex_03_01_exe.exe src\examples\03_module\02_for\ex_03_02_library.lib src\examples\03_module\02_for\ex_03_02_exe.exe src\examples\03_module\03_do_while\ex_03_03_library.lib src\examples\03_module\03_do_while\ex_03_03_exe.exe src\examples\03_module\04_for_ranged\ex_03_04_library.lib src\examples\03_module\04_for_ranged\ex_03_04_exe.exe src\examples\03_module\05_value_and_reference_params\ex_03_05_library.lib src\examples\03_module\05_value_and_reference_params\ex_03_05_exe.exe src\examples\03_module\06_vectors\ex_03_06_library.lib src\examples\03_module\06_vectors\ex_03_06_exe.exe src\examples\03_module\07_vectors_for_ranged\ex_03_07_library.lib src\examples\03_module\07_vectors_for_ranged\ex_03_07_exe.exe src\examples\04_module\01_bank\ex_04_01_library.lib src\examples\04_module\01_bank\ex_04_01_exe.exe src\homework\01_expressions\hw_01_library.lib src\homework\01_expressions\hw_01_exe.exe src\homework\02_decisions\hw_02_library.lib src\homework\02_decisions\hw_02_exe.exe src\homework\03_iteration\hw_03_library.lib src\homework\03_iteration\hw_03_exe.exe src\homework\04_vectors\hw_04_library.lib src\homework\04_vectors\hw_04_exe.exe test\classwork_test\01_assign_test\cw_01_tests.exe test\classwork_test\02_assign_test\cw_02_tests.exe test\classwork_test\03_assign_test\cw_03_tests.exe test\examples_test\01_module_test\ex_01_tests.exe test\examples_test\02_module_test\ex_02_tests.exe test\examples_test\03_module_test\ex_03_tests.exe test\examples_test\04_module_test\ex_04_tests.exe test\homework_test\01_expressions_test\hw_01_tests.exe test\homework_test\02_decisions_test\hw_02_tests.exe test\homework_test\03_iteration_test\hw_03_tests.exe test\homework_test\04_vectors_test\hw_04_tests.exe
+build all: phony src\classwork\01_assign\cw_01_library.lib src\classwork\01_assign\cw_01_exe.exe src\classwork\02_assign\cw_02_library.lib src\classwork\02_assign\cw_02_exe.exe src\classwork\03_assign\cw_03_library.lib src\classwork\03_assign\cw_03_exe.exe src\classwork\05_assign\cw_05_library.lib src\classwork\05_assign\cw_05_exe.exe src\examples\01_module\01_output\ex_01_01_library.lib src\examples\01_module\01_output\ex_01_01_exe.exe src\examples\01_module\02_variables\ex_01_02_library.lib src\examples\01_module\02_variables\ex_01_02_exe.exe src\examples\01_module\03_input\ex_01_03_library.lib src\examples\01_module\03_input\ex_01_03_exe.exe src\examples\01_module\04_expressions\ex_01_04_library.lib src\examples\01_module\04_expressions\ex_01_04_exe.exe src\examples\01_module\05_auto\ex_01_05_library.lib src\examples\01_module\05_auto\ex_01_05_exe.exe src\examples\02_module\01_if\ex_02_01_library.lib src\examples\02_module\01_if\ex_02_01_exe.exe src\examples\02_module\02_if_else\ex_02_02_library.lib src\examples\02_module\02_if_else\ex_02_02_exe.exe src\examples\02_module\03_switch\ex_02_03_library.lib src\examples\02_module\03_switch\ex_02_03_exe.exe src\examples\03_module\01_while\ex_03_01_library.lib src\examples\03_module\01_while\ex_03_01_exe.exe src\examples\03_module\02_for\ex_03_02_library.lib src\examples\03_module\02_for\ex_03_02_exe.exe src\examples\03_module\03_do_while\ex_03_03_library.lib src\examples\03_module\03_do_while\ex_03_03_exe.exe src\examples\03_module\04_for_ranged\ex_03_04_library.lib src\examples\03_module\04_for_ranged\ex_03_04_exe.exe src\examples\03_module\05_value_and_reference_params\ex_03_05_library.lib src\examples\03_module\05_value_and_reference_params\ex_03_05_exe.exe src\examples\03_module\06_vectors\ex_03_06_library.lib src\examples\03_module\06_vectors\ex_03_06_exe.exe src\examples\03_module\07_vectors_for_ranged\ex_03_07_library.lib src\examples\03_module\07_vectors_for_ranged\ex_03_07_exe.exe src\examples\04_module\01_bank\ex_04_01_library.lib src\examples\04_module\01_bank\ex_04_01_exe.exe src\homework\01_expressions\hw_01_library.lib src\homework\01_expressions\hw_01_exe.exe src\homework\02_decisions\hw_02_library.lib src\homework\02_decisions\hw_02_exe.exe src\homework\03_iteration\hw_03_library.lib src\homework\03_iteration\hw_03_exe.exe src\homework\04_vectors\hw_04_library.lib src\homework\04_vectors\hw_04_exe.exe src\homework\tic_tac_toe\tic_tac_toe_library.lib src\homework\tic_tac_toe\tic_tac_toe_exe.exe test\classwork_test\01_assign_test\cw_01_tests.exe test\classwork_test\02_assign_test\cw_02_tests.exe test\classwork_test\03_assign_test\cw_03_tests.exe test\classwork_test\05_assign_test\cw_05_tests.exe test\examples_test\01_module_test\ex_01_tests.exe test\examples_test\02_module_test\ex_02_tests.exe test\examples_test\03_module_test\ex_03_tests.exe test\examples_test\04_module_test\ex_04_tests.exe test\homework_test\01_expressions_test\hw_01_tests.exe test\homework_test\02_decisions_test\hw_02_tests.exe test\homework_test\03_iteration_test\hw_03_tests.exe test\homework_test\04_vectors_test\hw_04_tests.exe test\homework_test\tic_tac_toe_test\tic_tac_toe_test.exe
 
 
 #############################################
@@ -4805,14 +5315,14 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\src\CMakeLists.txt ..\..\..\src\classwork\01_assign\CMakeLists.txt ..\..\..\src\classwork\02_assign\CMakeLists.txt ..\..\..\src\classwork\03_assign\CMakeLists.txt ..\..\..\src\classwork\CMakeLists.txt ..\..\..\src\examples\01_module\01_output\CMakeLists.txt ..\..\..\src\examples\01_module\02_variables\CMakeLists.txt ..\..\..\src\examples\01_module\03_input\CMakeLists.txt ..\..\..\src\examples\01_module\04_expressions\CMakeLists.txt ..\..\..\src\examples\01_module\05_auto\CMakeLists.txt ..\..\..\src\examples\01_module\CMakeLists.txt ..\..\..\src\examples\02_module\01_if\CMakeLists.txt ..\..\..\src\examples\02_module\02_if_else\CMakeLists.txt ..\..\..\src\examples\02_module\03_switch\CMakeLists.txt ..\..\..\src\examples\02_module\CMakeLists.txt ..\..\..\src\examples\03_module\01_while\CMakeLists.txt ..\..\..\src\examples\03_module\02_for\CMakeLists.txt ..\..\..\src\examples\03_module\03_do_while\CMakeLists.txt ..\..\..\src\examples\03_module\04_for_ranged\CMakeLists.txt ..\..\..\src\examples\03_module\05_value_and_reference_params\CMakeLists.txt ..\..\..\src\examples\03_module\06_vectors\CMakeLists.txt ..\..\..\src\examples\03_module\07_vectors_for_ranged\CMakeLists.txt ..\..\..\src\examples\03_module\CMakeLists.txt ..\..\..\src\examples\04_module\01_bank\CMakeLists.txt ..\..\..\src\examples\04_module\CMakeLists.txt ..\..\..\src\examples\CMakeLists.txt ..\..\..\src\homework\01_expressions\CMakeLists.txt ..\..\..\src\homework\02_decisions\CMakeLists.txt ..\..\..\src\homework\03_iteration\CMakeLists.txt ..\..\..\src\homework\04_vectors\CMakeLists.txt ..\..\..\src\homework\CMakeLists.txt ..\..\..\test\CMakeLists.txt ..\..\..\test\classwork_test\01_assign_test\CMakeLists.txt ..\..\..\test\classwork_test\02_assign_test\CMakeLists.txt ..\..\..\test\classwork_test\03_assign_test\CMakeLists.txt ..\..\..\test\classwork_test\CMakeLists.txt ..\..\..\test\examples_test\01_module_test\CMakeLists.txt ..\..\..\test\examples_test\02_module_test\CMakeLists.txt ..\..\..\test\examples_test\03_module_test\CMakeLists.txt ..\..\..\test\examples_test\04_module_test\CMakeLists.txt ..\..\..\test\examples_test\CMakeLists.txt ..\..\..\test\homework_test\01_expressions_test\CMakeLists.txt ..\..\..\test\homework_test\02_decisions_test\CMakeLists.txt ..\..\..\test\homework_test\03_iteration_test\CMakeLists.txt ..\..\..\test\homework_test\04_vectors_test\CMakeLists.txt ..\..\..\test\homework_test\CMakeLists.txt CMakeCache.txt CMakeFiles\3.15.19101501-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.15.19101501-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.15.19101501-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.15.19101501-MSVC_2\CMakeSystem.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake
+build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\src\CMakeLists.txt ..\..\..\src\classwork\01_assign\CMakeLists.txt ..\..\..\src\classwork\02_assign\CMakeLists.txt ..\..\..\src\classwork\03_assign\CMakeLists.txt ..\..\..\src\classwork\05_assign\CMakeLists.txt ..\..\..\src\classwork\CMakeLists.txt ..\..\..\src\examples\01_module\01_output\CMakeLists.txt ..\..\..\src\examples\01_module\02_variables\CMakeLists.txt ..\..\..\src\examples\01_module\03_input\CMakeLists.txt ..\..\..\src\examples\01_module\04_expressions\CMakeLists.txt ..\..\..\src\examples\01_module\05_auto\CMakeLists.txt ..\..\..\src\examples\01_module\CMakeLists.txt ..\..\..\src\examples\02_module\01_if\CMakeLists.txt ..\..\..\src\examples\02_module\02_if_else\CMakeLists.txt ..\..\..\src\examples\02_module\03_switch\CMakeLists.txt ..\..\..\src\examples\02_module\CMakeLists.txt ..\..\..\src\examples\03_module\01_while\CMakeLists.txt ..\..\..\src\examples\03_module\02_for\CMakeLists.txt ..\..\..\src\examples\03_module\03_do_while\CMakeLists.txt ..\..\..\src\examples\03_module\04_for_ranged\CMakeLists.txt ..\..\..\src\examples\03_module\05_value_and_reference_params\CMakeLists.txt ..\..\..\src\examples\03_module\06_vectors\CMakeLists.txt ..\..\..\src\examples\03_module\07_vectors_for_ranged\CMakeLists.txt ..\..\..\src\examples\03_module\CMakeLists.txt ..\..\..\src\examples\04_module\01_bank\CMakeLists.txt ..\..\..\src\examples\04_module\CMakeLists.txt ..\..\..\src\examples\CMakeLists.txt ..\..\..\src\homework\01_expressions\CMakeLists.txt ..\..\..\src\homework\02_decisions\CMakeLists.txt ..\..\..\src\homework\03_iteration\CMakeLists.txt ..\..\..\src\homework\04_vectors\CMakeLists.txt ..\..\..\src\homework\CMakeLists.txt ..\..\..\src\homework\tic_tac_toe\CMakeLists.txt ..\..\..\test\CMakeLists.txt ..\..\..\test\classwork_test\01_assign_test\CMakeLists.txt ..\..\..\test\classwork_test\02_assign_test\CMakeLists.txt ..\..\..\test\classwork_test\03_assign_test\CMakeLists.txt ..\..\..\test\classwork_test\05_assign_test\CMakeLists.txt ..\..\..\test\classwork_test\CMakeLists.txt ..\..\..\test\examples_test\01_module_test\CMakeLists.txt ..\..\..\test\examples_test\02_module_test\CMakeLists.txt ..\..\..\test\examples_test\03_module_test\CMakeLists.txt ..\..\..\test\examples_test\04_module_test\CMakeLists.txt ..\..\..\test\examples_test\CMakeLists.txt ..\..\..\test\homework_test\01_expressions_test\CMakeLists.txt ..\..\..\test\homework_test\02_decisions_test\CMakeLists.txt ..\..\..\test\homework_test\03_iteration_test\CMakeLists.txt ..\..\..\test\homework_test\04_vectors_test\CMakeLists.txt ..\..\..\test\homework_test\CMakeLists.txt ..\..\..\test\homework_test\tic_tac_toe_test\CMakeLists.txt CMakeCache.txt CMakeFiles\3.15.19101501-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.15.19101501-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.15.19101501-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.15.19101501-MSVC_2\CMakeSystem.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ..\..\..\CMakeLists.txt ..\..\..\src\CMakeLists.txt ..\..\..\src\classwork\01_assign\CMakeLists.txt ..\..\..\src\classwork\02_assign\CMakeLists.txt ..\..\..\src\classwork\03_assign\CMakeLists.txt ..\..\..\src\classwork\CMakeLists.txt ..\..\..\src\examples\01_module\01_output\CMakeLists.txt ..\..\..\src\examples\01_module\02_variables\CMakeLists.txt ..\..\..\src\examples\01_module\03_input\CMakeLists.txt ..\..\..\src\examples\01_module\04_expressions\CMakeLists.txt ..\..\..\src\examples\01_module\05_auto\CMakeLists.txt ..\..\..\src\examples\01_module\CMakeLists.txt ..\..\..\src\examples\02_module\01_if\CMakeLists.txt ..\..\..\src\examples\02_module\02_if_else\CMakeLists.txt ..\..\..\src\examples\02_module\03_switch\CMakeLists.txt ..\..\..\src\examples\02_module\CMakeLists.txt ..\..\..\src\examples\03_module\01_while\CMakeLists.txt ..\..\..\src\examples\03_module\02_for\CMakeLists.txt ..\..\..\src\examples\03_module\03_do_while\CMakeLists.txt ..\..\..\src\examples\03_module\04_for_ranged\CMakeLists.txt ..\..\..\src\examples\03_module\05_value_and_reference_params\CMakeLists.txt ..\..\..\src\examples\03_module\06_vectors\CMakeLists.txt ..\..\..\src\examples\03_module\07_vectors_for_ranged\CMakeLists.txt ..\..\..\src\examples\03_module\CMakeLists.txt ..\..\..\src\examples\04_module\01_bank\CMakeLists.txt ..\..\..\src\examples\04_module\CMakeLists.txt ..\..\..\src\examples\CMakeLists.txt ..\..\..\src\homework\01_expressions\CMakeLists.txt ..\..\..\src\homework\02_decisions\CMakeLists.txt ..\..\..\src\homework\03_iteration\CMakeLists.txt ..\..\..\src\homework\04_vectors\CMakeLists.txt ..\..\..\src\homework\CMakeLists.txt ..\..\..\test\CMakeLists.txt ..\..\..\test\classwork_test\01_assign_test\CMakeLists.txt ..\..\..\test\classwork_test\02_assign_test\CMakeLists.txt ..\..\..\test\classwork_test\03_assign_test\CMakeLists.txt ..\..\..\test\classwork_test\CMakeLists.txt ..\..\..\test\examples_test\01_module_test\CMakeLists.txt ..\..\..\test\examples_test\02_module_test\CMakeLists.txt ..\..\..\test\examples_test\03_module_test\CMakeLists.txt ..\..\..\test\examples_test\04_module_test\CMakeLists.txt ..\..\..\test\examples_test\CMakeLists.txt ..\..\..\test\homework_test\01_expressions_test\CMakeLists.txt ..\..\..\test\homework_test\02_decisions_test\CMakeLists.txt ..\..\..\test\homework_test\03_iteration_test\CMakeLists.txt ..\..\..\test\homework_test\04_vectors_test\CMakeLists.txt ..\..\..\test\homework_test\CMakeLists.txt CMakeCache.txt CMakeFiles\3.15.19101501-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.15.19101501-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.15.19101501-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.15.19101501-MSVC_2\CMakeSystem.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake: phony
+build ..\..\..\CMakeLists.txt ..\..\..\src\CMakeLists.txt ..\..\..\src\classwork\01_assign\CMakeLists.txt ..\..\..\src\classwork\02_assign\CMakeLists.txt ..\..\..\src\classwork\03_assign\CMakeLists.txt ..\..\..\src\classwork\05_assign\CMakeLists.txt ..\..\..\src\classwork\CMakeLists.txt ..\..\..\src\examples\01_module\01_output\CMakeLists.txt ..\..\..\src\examples\01_module\02_variables\CMakeLists.txt ..\..\..\src\examples\01_module\03_input\CMakeLists.txt ..\..\..\src\examples\01_module\04_expressions\CMakeLists.txt ..\..\..\src\examples\01_module\05_auto\CMakeLists.txt ..\..\..\src\examples\01_module\CMakeLists.txt ..\..\..\src\examples\02_module\01_if\CMakeLists.txt ..\..\..\src\examples\02_module\02_if_else\CMakeLists.txt ..\..\..\src\examples\02_module\03_switch\CMakeLists.txt ..\..\..\src\examples\02_module\CMakeLists.txt ..\..\..\src\examples\03_module\01_while\CMakeLists.txt ..\..\..\src\examples\03_module\02_for\CMakeLists.txt ..\..\..\src\examples\03_module\03_do_while\CMakeLists.txt ..\..\..\src\examples\03_module\04_for_ranged\CMakeLists.txt ..\..\..\src\examples\03_module\05_value_and_reference_params\CMakeLists.txt ..\..\..\src\examples\03_module\06_vectors\CMakeLists.txt ..\..\..\src\examples\03_module\07_vectors_for_ranged\CMakeLists.txt ..\..\..\src\examples\03_module\CMakeLists.txt ..\..\..\src\examples\04_module\01_bank\CMakeLists.txt ..\..\..\src\examples\04_module\CMakeLists.txt ..\..\..\src\examples\CMakeLists.txt ..\..\..\src\homework\01_expressions\CMakeLists.txt ..\..\..\src\homework\02_decisions\CMakeLists.txt ..\..\..\src\homework\03_iteration\CMakeLists.txt ..\..\..\src\homework\04_vectors\CMakeLists.txt ..\..\..\src\homework\CMakeLists.txt ..\..\..\src\homework\tic_tac_toe\CMakeLists.txt ..\..\..\test\CMakeLists.txt ..\..\..\test\classwork_test\01_assign_test\CMakeLists.txt ..\..\..\test\classwork_test\02_assign_test\CMakeLists.txt ..\..\..\test\classwork_test\03_assign_test\CMakeLists.txt ..\..\..\test\classwork_test\05_assign_test\CMakeLists.txt ..\..\..\test\classwork_test\CMakeLists.txt ..\..\..\test\examples_test\01_module_test\CMakeLists.txt ..\..\..\test\examples_test\02_module_test\CMakeLists.txt ..\..\..\test\examples_test\03_module_test\CMakeLists.txt ..\..\..\test\examples_test\04_module_test\CMakeLists.txt ..\..\..\test\examples_test\CMakeLists.txt ..\..\..\test\homework_test\01_expressions_test\CMakeLists.txt ..\..\..\test\homework_test\02_decisions_test\CMakeLists.txt ..\..\..\test\homework_test\03_iteration_test\CMakeLists.txt ..\..\..\test\homework_test\04_vectors_test\CMakeLists.txt ..\..\..\test\homework_test\CMakeLists.txt ..\..\..\test\homework_test\tic_tac_toe_test\CMakeLists.txt CMakeCache.txt CMakeFiles\3.15.19101501-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.15.19101501-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.15.19101501-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.15.19101501-MSVC_2\CMakeSystem.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeCInformation.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeCXXInformation.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeGenericSystem.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeRCInformation.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Platform\Windows.cmake E$:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake: phony
 
 
 #############################################
