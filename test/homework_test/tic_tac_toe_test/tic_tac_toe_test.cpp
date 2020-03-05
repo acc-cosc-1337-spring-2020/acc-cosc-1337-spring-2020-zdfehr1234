@@ -47,3 +47,15 @@ TEST_CASE("Test start game with X game flow")
 
 
 }
+
+TEST_CASE("Test start game with O game flow")
+{
+    TicTacToe game;
+    game.start_game("O");
+    REQUIRE(game.get_player() == "O");
+    game.mark_board(4);
+    REQUIRE(game.get_player() == "X");
+
+
+}
+

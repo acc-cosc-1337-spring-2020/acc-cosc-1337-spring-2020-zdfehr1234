@@ -9,11 +9,12 @@ public:
 	void start_game(string first_player);
 	void mark_board(int position);
 	string get_player() const { return next_player; }
+	
 
 private:
 	string player{ "" };
 	string next_player{ "" };
-	void set_next_player();
+	void set_next_player() ;
 
 };
 
