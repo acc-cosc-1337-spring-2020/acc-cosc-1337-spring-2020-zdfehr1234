@@ -5,6 +5,15 @@ using std::cout; using std::cin;
 
 int main()
 {
+	BankAccount account1(500);
+	cin >> account1; 
+	cout << account1;
+	display_balance(account1);
+
+
+
+
+
 	//BankAccount a = 100; Does not work since in the bank_account.h file we added explicit in line 8.
 	BankAccount a (100); // Only allowed syntax for creating an account with balance. 
 	cout << a.get_balance();
