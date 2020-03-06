@@ -14,7 +14,17 @@ int main()
 	TicTacToe game;
 	cout << "Enter first player (X/O): ";
 	cin >> player1;
-	game.start_game(player1);
+	
+	try
+	{
+		game.start_game(player1);
+	}
+	catch (Error e)
+	{
+		cout << e.get_message() << "\n";
+	}
+	
+	
 
 	do
 	{
