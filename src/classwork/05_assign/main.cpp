@@ -17,6 +17,10 @@ Iterate the vector and display the Area for each Rectangle on one line and the t
 */
 int main()
 {
+
+
+
+
 	int area{ 0 };
 	int total{ 0 };
 	vector<Rect> rectangles{ Rect(4,5),Rect(10,10),Rect(100,10) };
@@ -27,9 +31,11 @@ int main()
 	{
 		area = rec.get_area();
 		total += area;
-		cout << area << "\t";
+		cout << "\n" << rec ;
 	}
 
 	cout << "\nTotal area of all rectangles: " << total;
+
+	
 	return 0;
 }
