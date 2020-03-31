@@ -21,7 +21,7 @@ public:
 	friend std::ostream& operator<<(std::ostream & out, const BankAccount& b); // Used to cout in main without calling class
 	friend std::istream& operator>>(std::istream& in, BankAccount& b); //Used to cin in main without calling class
 
-protected: //Allows variables to be accessed by other classes but not in main.
+protected: //Allows variables to be accessed by other classes but not in main. (Such as in the savings account class)
 	int balance{ 0 }; //Set balance = 0 for deafult value. (Will be overwritten if another value is sent in)
 
 private:

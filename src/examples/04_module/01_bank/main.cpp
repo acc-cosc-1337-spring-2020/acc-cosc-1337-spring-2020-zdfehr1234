@@ -1,13 +1,22 @@
 #include "bank_account.h"
 #include "checking_account.h"
 #include <iostream>
+#include <vector>
 
-using std::cout; using std::cin;
+
+using std::cout; using std::cin; using std::vector;
 
 int main()
 {
 	CheckingAccount checking;
 	CheckingAccount checking1(90);
+
+	std::vector<BankAccount> accounts{ BankAccount(100), BankAccount(200) }; //Creates a list of bank account vectors
+
+	for (auto act : accounts)
+	{
+		cout << act.get_balance() << "\n";
+	}
 	
 	
 
