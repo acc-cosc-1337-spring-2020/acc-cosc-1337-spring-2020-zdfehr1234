@@ -11,41 +11,51 @@ int main()
 	int position;
 	auto choice{ 'y' };
 
-	TicTacToe game;
-	cout << "Enter first player (X/O): ";
-	cin >> player1;
-	
-	try
-	{
-		game.start_game(player1);
-	}
-	catch (Error e)
-	{
-		cout << e.get_message() << "\n";
-	}
-	
-	
-
 	do
 	{
-		player1 = game.get_player();
-		cout << "Player "<< player1 << " enter a position (1 to 9): ";
-		cin >> position;
+		TicTacToe game;
+		cout << "Enter first player (X/O): ";
+		cin >> player1;
 
 		try
 		{
-			game.mark_board(position);
+			game.start_game(player1);
 		}
 		catch (Error e)
 		{
 			cout << e.get_message() << "\n";
 		}
 
-		cout << "Continue? (y/n)";
+		while (game.game_over() == false)
+		{
+			player1 = game.get_player();
+			cout << "\nPlayer " << player1 << " enter a position (1 to 9): ";
+			cin >> position;
+			try
+			{
+				game.mark_board(position);
+			}
+			catch (Error e)
+			{
+				cout << e.get_message() << "\n";
+			}
+			cout << "_______________________________________________________________________\n";
+			game.display_board();
+
+		}
+		if (game.get_winner() == "C")
+		{
+			cout << "\nTie!";
+		}
+		else
+		{
+			cout << "\n\n" << game.get_winner() << " is the winner!!\n";
+		}
+
+		cout << "\nPlay again? (y/n)";
 		cin >> choice;
 
 	} while (choice == 'y' || choice == 'Y');
-
 	
 }
 
