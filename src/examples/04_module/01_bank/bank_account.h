@@ -12,7 +12,7 @@ class BankAccount
 public:
 	BankAccount() = default; //Default constructor ex. used for new accounts (can also be written BankAccount() {})
 	explicit BankAccount(int b) : balance{ b } {} //Used for accounts with an existing balance
-	int get_balance()const { return balance; }
+	virtual int get_balance()const { return balance; }
 	void deposit(int amount);
 	void withdraw(int amount);
 	void open(int amount);

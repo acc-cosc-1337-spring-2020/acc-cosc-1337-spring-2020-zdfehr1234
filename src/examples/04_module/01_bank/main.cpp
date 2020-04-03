@@ -1,17 +1,30 @@
 #include "bank_account.h"
 #include "checking_account.h"
+#include "savings_account.h"
 #include <iostream>
 #include <vector>
+#include <memory>
 
 
 using std::cout; using std::cin; using std::vector;
+using std::unique_ptr; using std::make_unique;
 
 int main()
 {
-	CheckingAccount checking;
-	CheckingAccount checking1(90);
+	unique_ptr<BankAccount> s = make_unique<SavingsAccount>(90); //Creates dynamic memory behind the scenes (smart pointer)
+	unique_ptr<BankAccount> c = make_unique<CheckingAccount>(100);
 
-	std::vector<BankAccount> accounts{ BankAccount(100), BankAccount(200) }; //Creates a list of bank account vectors
+	
+	std::vector<unique_ptr<BankAccount>> account; //Creates a list of bank account vectors
+	account.push_back(std::move(s));
+	account.push_back(std::move(c));
+
+	for (auto& act : account)
+	{
+		cout << act->get_balance() << "\n";
+	}
+
+	/*
 
 	for (auto act : accounts)
 	{
@@ -52,6 +65,8 @@ int main()
 	{
 		cout << e.get_error() << "\n";
 	}
+
+	*/
 
 	return 0;
 }
