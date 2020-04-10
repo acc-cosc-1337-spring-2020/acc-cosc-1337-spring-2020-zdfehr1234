@@ -1,13 +1,16 @@
 #include "bank_account.h"
 
-
 //bank_account.cpp
+int BankAccount::get_balance()const
+{
+	return balance;
+}
 
 void BankAccount::deposit(int amount)
 {
 	if (amount > 0)
 	{
-		balance += amount; 
+		balance += amount;
 	}
 	else
 	{
@@ -23,7 +26,7 @@ void BankAccount::withdraw(int amount)
 	}
 	else if (amount > balance)
 	{
-		throw Invalid("Insufficent Funds.");
+		throw Invalid("Insufficient Funds");
 	}
 	else
 	{
@@ -33,34 +36,34 @@ void BankAccount::withdraw(int amount)
 
 void BankAccount::open(int amount)
 {
-	if (min_opening_balance > amount)
+	if (amount < min_balance_to_open)
 	{
 		throw Invalid("Amount must be at least 25...");
 	}
-	
+
 	balance += amount;
 }
 
 double BankAccount::rate = init_rate();
 
-void display_balance(const BankAccount & b)
+void display_balance(const BankAccount& b)
 {
-	cout << "Balance is: " << b.balance;
+	std::cout << "Balance is: " << b.balance << "\n";
 }
 
-std::ostream & operator<<(std::ostream & out, const BankAccount & b)
+std::ostream& operator<<(std::ostream& out, const BankAccount& b)
 {
-	out << "Balance is: " << b.balance;
+	out << "Balance is: " << b.balance << "\n";
 
 	return out;
 }
 
-std::istream & operator>>(std::istream & in, BankAccount & b)
+std::istream& operator>>(std::istream& in, BankAccount& b)
 {
 	int amount;
-	cout << "Enter amount: ";
+	std::cout << "Enter amount: ";
 	in >> amount;
 	b.deposit(amount);
-	
+
 	return in;
 }

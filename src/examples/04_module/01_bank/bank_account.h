@@ -12,7 +12,7 @@ class BankAccount
 public:
 	BankAccount() = default; //Default constructor ex. used for new accounts (can also be written BankAccount() {})
 	explicit BankAccount(int b) : balance{ b } {} //Used for accounts with an existing balance
-	virtual int get_balance()const { return balance; }
+	virtual int get_balance()const = 0;
 	void deposit(int amount);
 	void withdraw(int amount);
 	void open(int amount);
@@ -25,7 +25,7 @@ protected: //Allows variables to be accessed by other classes but not in main. (
 	int balance{ 0 }; //Set balance = 0 for deafult value. (Will be overwritten if another value is sent in)
 
 private:
-	const int min_opening_balance{ 25 };
+	const int min_balance_to_open{ 25 };
 	static double rate; //Cannot give value inside class
 	static double init_rate() { return .025; }
 };

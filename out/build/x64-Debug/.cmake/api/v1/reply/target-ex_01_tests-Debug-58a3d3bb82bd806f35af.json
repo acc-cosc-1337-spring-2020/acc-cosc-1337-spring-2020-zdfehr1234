@@ -295,15 +295,7 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "ex_01_02_library::@98ced6c5c932d64fa375"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "ex_01_01_library::@9beb7fda2dd3fb40f4e3"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "ex_01_03_library::@11d25c5d76fa49f519d8"
+			"id" : "ex_01_04_library::@079857063f5d11a045b7"
 		},
 		{
 			"backtrace" : 2,
@@ -311,7 +303,15 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "ex_01_04_library::@079857063f5d11a045b7"
+			"id" : "ex_01_03_library::@11d25c5d76fa49f519d8"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "ex_01_02_library::@98ced6c5c932d64fa375"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "ex_01_01_library::@9beb7fda2dd3fb40f4e3"
 		}
 	],
 	"id" : "ex_01_tests::@db0f1d96db498c721363",
