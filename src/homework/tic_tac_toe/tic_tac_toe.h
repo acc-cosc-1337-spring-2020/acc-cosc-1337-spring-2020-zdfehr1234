@@ -1,6 +1,10 @@
 //h
+#ifndef TIC_TAC_TOE_H //Header Guard
+#define TIC_TAC_TOE_H
 #include <string>
 #include <vector>
+
+
 
 
 using std::vector;
@@ -15,6 +19,8 @@ public:
 	void display_board() const;
 	string get_player() const { return next_player; }
 	string get_winner() const { return winner; }
+	friend std::istream& operator>>(std::istream& in, TicTacToe& b);
+	friend std::ostream& operator<<(std::ostream& out, const TicTacToe& b);
 
 	
 
@@ -33,6 +39,11 @@ private:
 
 };
 
+#endif
+
+#ifndef ERROR_H
+#define ERROR_H
+
 class Error
 {
 public:
@@ -42,3 +53,5 @@ public:
 private:
 	std::string message;
 };
+
+#endif // !ERROR_H

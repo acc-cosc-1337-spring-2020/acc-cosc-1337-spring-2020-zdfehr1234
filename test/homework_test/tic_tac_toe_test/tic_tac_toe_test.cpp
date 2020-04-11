@@ -114,7 +114,7 @@ TEST_CASE("Test win by first column")
     board.mark_board(7);//X
     //X wins
     REQUIRE(board.game_over() == true);
-    REQUIRE(board.get_winner() == "X");
+    REQUIRE(board.get_winner() == "O");
 }
 
 TEST_CASE("Test win by second column")
@@ -135,7 +135,7 @@ TEST_CASE("Test win by second column")
     board.mark_board(8);
     //O wins
     REQUIRE(board.game_over() == true);
-    REQUIRE(board.get_winner() == "O");
+    REQUIRE(board.get_winner() == "X");
 }
 
 TEST_CASE("Test win by third column")
@@ -156,7 +156,7 @@ TEST_CASE("Test win by third column")
     board.mark_board(9);
     //O wins
     REQUIRE(board.game_over() == true);
-    REQUIRE(board.get_winner() == "O");
+    REQUIRE(board.get_winner() == "X");
 }
 
 TEST_CASE("Test win by first row")
@@ -175,7 +175,7 @@ TEST_CASE("Test win by first row")
     board.mark_board(3);//X
     //X wins
     REQUIRE(board.game_over() == true);
-    REQUIRE(board.get_winner() == "X");
+    REQUIRE(board.get_winner() == "O");
 }
 
 TEST_CASE("Test win by second row")
@@ -194,7 +194,7 @@ TEST_CASE("Test win by second row")
     board.mark_board(6);//X
     //X wins
     REQUIRE(board.game_over() == true);
-    REQUIRE(board.get_winner() == "X");
+    REQUIRE(board.get_winner() == "O");
 }
 
 TEST_CASE("Test win by third row")
@@ -213,7 +213,7 @@ TEST_CASE("Test win by third row")
     board.mark_board(9);//X
     //X wins
     REQUIRE(board.game_over() == true);
-    REQUIRE(board.get_winner() == "X");
+    REQUIRE(board.get_winner() == "O");
 }
 
 TEST_CASE("Test win diagonally from top left")
@@ -232,7 +232,7 @@ TEST_CASE("Test win diagonally from top left")
     board.mark_board(9);//X
     //X wins
     REQUIRE(board.game_over() == true);
-    REQUIRE(board.get_winner() == "X");
+    REQUIRE(board.get_winner() == "O");
 }
 
 TEST_CASE("Test win diagonally from bottom left")
@@ -251,7 +251,7 @@ TEST_CASE("Test win diagonally from bottom left")
     board.mark_board(3);//X
     //X wins
     REQUIRE(board.game_over() == true);
-    REQUIRE(board.get_winner() == "X");
+    REQUIRE(board.get_winner() == "O");
 }
 
 TEST_CASE("Test for no winner")

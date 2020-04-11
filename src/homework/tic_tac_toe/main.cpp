@@ -1,5 +1,6 @@
 #include<iostream>
 #include "tic_tac_toe.h"
+#include "tic_tac_toe_manager.h"
 
 using std::cout;
 using std::cin;
@@ -12,9 +13,12 @@ int main()
 	auto choice{ 'y' };
 	int err{ 0 };
 
+	TicTacToe game;
+	TicTacToeManager manager;
+
 	do
 	{
-		TicTacToe game;
+		
 		do
 		{
 			err = 0;
@@ -38,29 +42,28 @@ int main()
 			do
 			{
 				err = 0;
-				cout << "\nPlayer " << player1 << " enter a position (1 to 9): ";
-				cin >> position;
-				try
-				{
-					game.mark_board(position);
-				}
-				catch (Error e)
-				{
-					cout << e.get_message() << "\n";
-					err = 1;
-				}
+				cin >> game;
+				
 			} while (err != 0);
+			
+			cout << game << "\n"; 
 			cout << "_______________________________________________________________________\n";
-			game.display_board();
+			
 
 		}
 		if (game.get_winner() == "C")
 		{
-			cout << "\nTie!";
+			cout << "\nTie!\n";
+			manager.save_game(game);
+			cout << game;
+			cout << manager;
 		}
 		else
 		{
 			cout << "\n\n" << game.get_winner() << " is the winner!!\n";
+			manager.save_game(game);
+			cout << game << "\n";
+			cout << manager << "\n";
 		}
 
 		cout << "\nPlay again? (y/n)";
@@ -68,5 +71,6 @@ int main()
 
 	} while (choice == 'y' || choice == 'Y');
 	
+	cout << "\n" << manager;
 }
 
