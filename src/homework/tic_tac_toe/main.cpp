@@ -8,16 +8,17 @@ using std::cin;
 
 int main() 
 {
-	string player1;
 	int position;
 	auto choice{ 'y' };
 	int err{ 0 };
 
-	TicTacToe game;
 	TicTacToeManager manager;
 
 	do
 	{
+		string player1;
+		TicTacToe game;
+
 		
 		do
 		{
