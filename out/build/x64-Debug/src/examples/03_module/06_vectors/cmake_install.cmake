@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/src/examples/03_module/06_vectors
+# Install script for directory: E:/GitHub/src/examples/03_module/06_vectors
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/zferh/Source/Repos/acc-cosc-1337-spring-2020-zdfehr1234/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "E:/GitHub/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

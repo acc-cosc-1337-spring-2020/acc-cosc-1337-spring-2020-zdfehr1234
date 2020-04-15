@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/src/examples/03_module
+# Install script for directory: E:/GitHub/src/examples/03_module
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/zferh/Source/Repos/acc-cosc-1337-spring-2020-zdfehr1234/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "E:/GitHub/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,13 +34,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/examples/03_module/01_while/cmake_install.cmake")
-  include("C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/examples/03_module/02_for/cmake_install.cmake")
-  include("C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/examples/03_module/03_do_while/cmake_install.cmake")
-  include("C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/examples/03_module/04_for_ranged/cmake_install.cmake")
-  include("C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/examples/03_module/05_value_and_reference_params/cmake_install.cmake")
-  include("C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/examples/03_module/06_vectors/cmake_install.cmake")
-  include("C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/src/examples/03_module/07_vectors_for_ranged/cmake_install.cmake")
+  include("E:/GitHub/out/build/x64-Debug/src/examples/03_module/01_while/cmake_install.cmake")
+  include("E:/GitHub/out/build/x64-Debug/src/examples/03_module/02_for/cmake_install.cmake")
+  include("E:/GitHub/out/build/x64-Debug/src/examples/03_module/03_do_while/cmake_install.cmake")
+  include("E:/GitHub/out/build/x64-Debug/src/examples/03_module/04_for_ranged/cmake_install.cmake")
+  include("E:/GitHub/out/build/x64-Debug/src/examples/03_module/05_value_and_reference_params/cmake_install.cmake")
+  include("E:/GitHub/out/build/x64-Debug/src/examples/03_module/06_vectors/cmake_install.cmake")
+  include("E:/GitHub/out/build/x64-Debug/src/examples/03_module/07_vectors_for_ranged/cmake_install.cmake")
 
 endif()
 

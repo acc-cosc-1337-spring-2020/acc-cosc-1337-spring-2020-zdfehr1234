@@ -1,8 +1,8 @@
 # CMake generated Testfile for 
-# Source directory: C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/test/classwork_test/03_assign_test
-# Build directory: C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/classwork_test/03_assign_test
+# Source directory: E:/GitHub/test/classwork_test/03_assign_test
+# Build directory: E:/GitHub/out/build/x64-Debug/test/classwork_test/03_assign_test
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-add_test(cw_03_tests "C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/out/build/x64-Debug/test/classwork_test/03_assign_test/cw_03_tests.exe" "-s")
-set_tests_properties(cw_03_tests PROPERTIES  _BACKTRACE_TRIPLES "C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/test/classwork_test/03_assign_test/CMakeLists.txt;3;add_test;C:/Users/zferh/source/repos/acc-cosc-1337-spring-2020-zdfehr1234/test/classwork_test/03_assign_test/CMakeLists.txt;0;")
+add_test(cw_03_tests "E:/GitHub/out/build/x64-Debug/test/classwork_test/03_assign_test/cw_03_tests.exe" "-s")
+set_tests_properties(cw_03_tests PROPERTIES  _BACKTRACE_TRIPLES "E:/GitHub/test/classwork_test/03_assign_test/CMakeLists.txt;3;add_test;E:/GitHub/test/classwork_test/03_assign_test/CMakeLists.txt;0;")
