@@ -39,6 +39,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("E:/GitHub/out/build/x64-Debug/src/examples/03_module/cmake_install.cmake")
   include("E:/GitHub/out/build/x64-Debug/src/examples/04_module/cmake_install.cmake")
   include("E:/GitHub/out/build/x64-Debug/src/examples/09_module/cmake_install.cmake")
+  include("E:/GitHub/out/build/x64-Debug/src/examples/11_module/cmake_install.cmake")
 
 endif()
 
