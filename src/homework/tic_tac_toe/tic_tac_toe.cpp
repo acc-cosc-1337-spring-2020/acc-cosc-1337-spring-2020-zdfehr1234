@@ -18,7 +18,7 @@ bool TicTacToe::game_over()
 	}
 	else
 	{
-		return check_board_full();
+		return false;
 	}
 
 
@@ -60,10 +60,7 @@ void TicTacToe::mark_board(int position)
 		}
 
 		pegs[position - 1] = player;
-		if (game_over() == false)
-		{
-			set_next_player();
-		}
+		set_next_player();
 	}
 	else if (pegs.size() == 16)
 	{
@@ -81,10 +78,7 @@ void TicTacToe::mark_board(int position)
 		}
 
 		pegs[position - 1] = player;
-		if (game_over() == false)
-		{
-			set_next_player();
-		}
+		set_next_player();
 	}
 
 
