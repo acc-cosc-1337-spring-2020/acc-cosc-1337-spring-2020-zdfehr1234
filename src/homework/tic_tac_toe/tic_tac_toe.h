@@ -13,7 +13,7 @@ using std::string;
 class TicTacToe
 {
 public:
-	TicTacToe(int size) : pegs(size* size, " ") { }
+	TicTacToe(int size) : pegs(size* size, " ") {}
 
 	bool game_over();
 	void start_game(string first_player);

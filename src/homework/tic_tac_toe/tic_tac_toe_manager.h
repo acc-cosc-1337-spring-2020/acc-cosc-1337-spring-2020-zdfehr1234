@@ -11,16 +11,17 @@
 
 using std::cout;
 
+
 class TicTacToeManager
 {
 public: 
-	void save_game( TicTacToe b);
+	void save_game( std::unique_ptr<TicTacToe>& game);
 	friend std::ostream& operator << (std::ostream &out, const TicTacToeManager &manager);
 	void get_winner_total(int& o, int& w, int& t);
 
 private: 
 	//std::vector<std::unique_ptr<TicTacToe>> games;
-	std::vector<std::reference_wrapper<TicTacToe>> games;
+	std::vector<std::unique_ptr<TicTacToe>> games;
 	int x_win = 0;
 	int o_win = 0;
 	int ties = 0;

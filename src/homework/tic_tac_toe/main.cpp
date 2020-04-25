@@ -1,3 +1,4 @@
+
 #include<iostream>
 #include "tic_tac_toe.h"
 #include "tic_tac_toe_manager.h"
@@ -6,18 +7,24 @@
 
 using std::cout;
 using std::cin;
+using std::unique_ptr;
+using std::make_unique;
 
 
 int main()
 {
-	//std::vector <std::reference_wrapper<TicTacToe>> game;
+	
+	unique_ptr<TicTacToeManager> manager = std::make_unique<TicTacToeManager>();
+	std::vector<std::unique_ptr<TicTacToe>> games;
+	unique_ptr<TicTacToe> game;
+	
 	int position;
 	auto choice{ 'y' };
 	int err{ 0 };
 	int type;
 	string player1;
 
-	TicTacToeManager manager;
+	
 
 	do
 	{
@@ -26,62 +33,18 @@ int main()
 
 		if (type == 3)
 		{
-			TicTacToe3 game3;
-			do
-			{
-				err = 0;
-				cout << "Enter first player (X/O): ";
-				cin >> player1;
-
-				try
-				{
-					game3.start_game(player1);
-				}
-				catch (Error e)
-				{
-					cout << e.get_message() << "\n";
-					err = 1;
-				}
-			} while (err != 0);
-
-			while (game3.game_over() == false)
-			{
-				player1 = game3.get_player();
-				do
-				{
-					err = 0;
-					cin >> game3;
-
-				} while (err != 0);
-
-				cout << game3 << "\n";
-				cout << "_______________________________________________________________________\n";
-
-
-			}
-			if (game3.get_winner() == "C")
-			{
-				cout << "\nTie!\n";
-				manager.save_game(game3);
-				cout << game3;
-				cout << manager;
-			}
-			else
-			{
-				cout << "\n\n" << game3.get_winner() << " is the winner!!\n";
-				manager.save_game(game3);
-				cout << game3 << "\n";
-				cout << manager << "\n";
-			}
-
-			cout << "\nPlay again? (y/n)";
-			cin >> choice;
-			cout << "\n_______________________________________________________________________\n";
+			game = make_unique<TicTacToe3>();
 
 		}
 		else if (type == 4)
 		{
-			TicTacToe4 game3;
+			game = make_unique<TicTacToe4>();
+		}
+		
+		
+
+		
+			
 			do
 			{
 				err = 0;
@@ -90,7 +53,7 @@ int main()
 
 				try
 				{
-					game3.start_game(player1);
+					game->start_game(player1);
 				}
 				catch (Error e)
 				{
@@ -99,45 +62,47 @@ int main()
 				}
 			} while (err != 0);
 
-			while (game3.game_over() == false)
+			while (game->game_over() == false)
 			{
-				player1 = game3.get_player();
+				player1 = game->get_player();
 				do
 				{
 					err = 0;
-					cin >> game3;
+					cin >> *game;
 
 				} while (err != 0);
 
-				cout << game3 << "\n";
+				cout << *game << "\n";
 				cout << "_______________________________________________________________________\n";
 
 
 			}
-			if (game3.get_winner() == "C")
+			if (game->get_winner() == "C")
 			{
 				cout << "\nTie!\n";
-				manager.save_game(game3);
-				cout << game3;
-				cout << manager;
+				manager->save_game(game);
+				cout << *game << "\n";
+				cout << *manager;
 			}
 			else
 			{
-				cout << "\n" << game3.get_winner() << " is the winner!!\n\n";
-				manager.save_game(game3);
-				cout << game3 << "\n\n";
-				cout << manager << "\n";
+				cout << "\n\n" << game->get_winner() << " is the winner!!\n";
+				manager->save_game(game);
+				cout << *game << "\n";
+				cout << *manager << "\n";
 			}
 
 			cout << "\nPlay again? (y/n)";
 			cin >> choice;
 			cout << "\n_______________________________________________________________________\n";
 
-		}
+		
+		
 
 
 	} while (choice == 'y' || choice == 'Y');
 	cout << "\n" << manager << "\n";
 	return 0;
 }
+
 
