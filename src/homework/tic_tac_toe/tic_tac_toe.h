@@ -9,16 +9,18 @@
 
 using std::vector;
 using std::string;
-
+//Add const class function get_pegs that returns a vector of strings
+//return the pegs vector
 class TicTacToe
 {
 public:
 	TicTacToe(int size) : pegs(size* size, " ") {}
-
+	TicTacToe(std::vector<string> p, string win) :pegs{ p },  winner{ win } {}//more code here to
+		//initialize the pegs vector with p and initialize winner.
 	bool game_over();
 	void start_game(string first_player);
 	void mark_board(int position);
-	//void display_board() const;
+	vector<string> get_pegs() const{ return pegs; }
 	string get_player() const { return next_player; }
 	string get_winner() const { return winner; }
 	friend std::istream& operator>>(std::istream& in, TicTacToe& b);

@@ -13,8 +13,8 @@ using std::make_unique;
 
 int main()
 {
-	
-	unique_ptr<TicTacToeManager> manager = std::make_unique<TicTacToeManager>();
+	TicTacToeData data;
+	unique_ptr<TicTacToeManager> manager = std::make_unique<TicTacToeManager>(data);
 	unique_ptr<TicTacToe> game;
 	
 	int position;
